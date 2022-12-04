@@ -1,0 +1,20 @@
+
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="assest/css/styles.css" type="text/css">
+</head>
+    <body>
+        <script src="assest/js/script1.js" async></script>
+        <h1>Users Page </h1>
+        <div>
+          
+               <% user.forEach((item)=>{%>
+                <div style="display:flex;gap:2rem;width: fit-content;" class="red">
+                    <p style="flex:1;display:flex;justify-content:end;min-width: 60px;"><%= item.name %></p>
+                    <p style="flex:1;display:flex;justify-content:start;min-width: 60px;"><%= item.code %></p>
+                </div>
+               <%})%>
+               <%- include("component/foooter/footer")%>
+        </div>
+    </body>
+    </html>
